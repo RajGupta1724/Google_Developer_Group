@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tech{
+    font-weight: 700;
+    background-color: rgb(21, 89, 192);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+.lang{
+    font-weight: 700;
+    background-color: aqua;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.lang div {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.lang div:hover {
+    background-color: rgb(123, 215, 215);
+    border-radius: 5px;
+}
+
+#options {
+    position: absolute;
+    top: 100px; /* Adjust based on your layout */
+    left: 20px; /* Fixed position on the left */
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+    min-width: 200px;
+}
+
+#options ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#options ul li {
+    padding: 5px 10px;
+}
+
+#options ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#options ul li:hover {
+    background-color: lightgray;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.dropdown .arrow {
+    font-size: 12px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 5px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li {
+    padding: 5px 10px;
+}
+
+.submenu li:hover {
+    background-color: lightgray;
+}
+
+.dropdown.active .submenu {
+    display: block;
+    position: relative; /* Removes absolute positioning to push items below */
+    margin-bottom: 10px;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Introduction section */
+.intro {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Topics section */
+.topics {
+    margin-bottom: 20px;
+}
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.topic-box {
+    background-color: #007acc;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.topic-box:hover {
+    background-color: #005f99;
+}
+
+/* Resources section */
+.resources {
+    background-color: #e6e6e6;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources ul li {
+    padding: 5px;
+}
+
+.resources ul li a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+}
+
+.resources ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Call-to-action (CTA) */
+.cta {
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cta button {
+    background-color: white;
+    color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta button:hover {
+    background-color: #ddd;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.footer-section {
+    width: 22%;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: aqua;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section p a {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    color: white;
+}
